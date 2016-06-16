@@ -6,14 +6,14 @@ set tabstop=4
 set expandtab
 set visualbell
 set hlsearch
-set complete=".,t,w,b,u,i"
 let g:netrw_sort_sequence="[\\/]$,\\<core\\%(\\.\\d\\+\\)\\=,\\.[a-np-z]$,\\.java$,\\.h$,\\.c$,\\.cpp$,*,\\.class$,\\.o$,\\.obj$, \\.info$,\\.swp$,\\.bak$,\\~$"
 filetype plugin on
 filetype indent on
 colo mine
 syntax enable
-nnoremap <Leader>e :Texplore<Enter>
-nnoremap <Leader>c :cd %:h<Enter>
+nnoremap <Leader>e :Texplore<CR>
+nnoremap <Leader>c :cd %:h<CR>
+nnoremap <Leader>t :tab split<CR><C-]>
 augroup shape
     au!
     au InsertEnter *
