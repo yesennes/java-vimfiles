@@ -58,10 +58,15 @@ Randon java.util.Randon
 StackPane javafx.scene.layout.StackPane
 Pane javafx.scene.layout.Pane
 Shape javafx.scene.shape.Shape
-Text javafx.scene.Text
+Text javafx.scene.text.Text
 HashTable java.util.HashTable
 Queue java.util.Queue
 DateFormat 
 ComboBox javafx.scene.control.ComboBox
 Alert javafx.scene.control.Alert
 Optional java.util.Optional
+ObservableList javafx.collections.ObservableList
+FXCollections javafx.collections.FXCollections
+TextInputDialog javafx.scene.control.TextInputDialog
+Property javafx.beans.property.Property
+Region javafx.scene.layout.Region

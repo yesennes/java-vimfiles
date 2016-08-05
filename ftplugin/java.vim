@@ -70,15 +70,15 @@ function! s:OpenDocs()
     let l:search = @/
     normal! yiw
     let l:class = @@
-    silent! execute "normal! gg/import [a-z.]*".@@."\<CR>"
+    silent! execute "normal! gg/import [A-Za-z.]*".@@.";\<CR>"
     silent! normal! nyt;
     let @@ = @@[7:]
     let l:list = split(@@,'\.')
     if len(l:list) > 0 && l:list[-1] ==# l:class
-        silent execute '!gnome-terminal -x google-chrome ///home/yesennes/Documents/docs/api/'.join(l:list,'/').'.html'
+        silent execute '!&google-chrome ///home/yesennes/Documents/docs/api/'.join(l:list,'/').'.html'
         execute "normal! \<C-O>\<C-O>"
     else
-        silent execute '!gnome-terminal -x google-chrome ///home/yesennes/Documents/docs/api/java/lang/'.l:class.'.html'
+        silent execute '!&google-chrome ///home/yesennes/Documents/docs/api/java/lang/'.l:class.'.html'
     endif
     execute "normal! \<C-L>\<C-O>"
     let @/ = l:search
