@@ -61,7 +61,6 @@ Shape javafx.scene.shape.Shape
 Text javafx.scene.text.Text
 HashTable java.util.HashTable
 Queue java.util.Queue
-DateFormat 
 ComboBox javafx.scene.control.ComboBox
 Alert javafx.scene.control.Alert
 Optional java.util.Optional
@@ -70,3 +69,15 @@ FXCollections javafx.collections.FXCollections
 TextInputDialog javafx.scene.control.TextInputDialog
 Property javafx.beans.property.Property
 Region javafx.scene.layout.Region
+ObjectProperty javafx.beans.property.ObjectProperty
+SimpleObjectProperty javafx.beans.property.SimpleObjectProperty
+MainFXApplication 
+Node javafx.scene.Node
+FXMLLoader javafx.fxml.FXMLLoader
+FXML javafx.fxml.FXML
+BooleanBinding javafx.beans.binding.BooleanBinding
+Bindings javafx.beans.binding.Bindings
+DialogPane javafx.scene.control.DialogPane
+ListView javafx.scene.control.ListView
+SpinnerValueFactory javafx.scene.control.SpinnerValueFactory
+ObservableArrayList 

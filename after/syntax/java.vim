@@ -1,4 +1,4 @@
-syn match javaOperator "%\|^\|&\|*\|-\|+\|=\||\|<\|>\|?\|:\|!\|\~\|[^/*]\zs\/\ze[^/*]"
+syn match javaOperator "%\|\^\|&\|*\|-\|+\|=\||\|<\|>\|?\|:\|!\|\~\|[^/*]\zs\/\ze[^/*]"
 syn keyword javaType new
 syn keyword javaImport import
 hi link javaImport Include

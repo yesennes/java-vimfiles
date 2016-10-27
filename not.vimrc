@@ -6,6 +6,7 @@ set tabstop=4
 set expandtab
 set visualbell
 set hlsearch
+set incsearch
 let g:netrw_sort_sequence="[\\/]$,\\<core\\%(\\.\\d\\+\\)\\=,\\.[a-np-z]$,\\.java$,\\.h$,\\.c$,\\.cpp$,*,\\.class$,\\.o$,\\.obj$, \\.info$,\\.swp$,\\.bak$,\\~$"
 filetype plugin on
 filetype indent on

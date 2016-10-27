@@ -1,7 +1,7 @@
 comp javac
 set makeprg=javac\ -Xlint
-set grepprg=checkstyle
-set grepformat=[ERROR]\ %f:%l:%c:\ %m,[ERROR]\ %f:%l:\ %m
+set grepprg=java\ -jar\ ~/Documents/TA/checkstyle-6.2.2.jar
+set grepformat=%f:%l:%c:\ %m
 nnoremap <F2> :!clear<Enter>:call <SID>Run()<Enter>
 nnoremap <F4>:!clear<Enter>:!java %:r
 nnoremap <F3> :grep %<CR>
@@ -25,7 +25,7 @@ function! s:Import()
     let l:reg = @@
     let l:search = @/
     normal! yiw
-    tabe ~/.vim/filetype/library.txt
+    tabe ~/.vim/library.txt
     tabm -1
     silent! execute "normal! /^".@@." \<CR>"
     if(line('.') == 1)
