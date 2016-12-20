@@ -1,7 +1,7 @@
 comp javac
 set makeprg=javac\ -Xlint
 set grepprg=java\ -jar\ ~/Documents/TA/checkstyle-6.2.2.jar
-set grepformat=%f:%l:%c:\ %m
+set grepformat=%f:%l:%c:\ %m,%f:%l:\ %m
 nnoremap <F2> :!clear<Enter>:call <SID>Run()<Enter>
 nnoremap <F4>:!clear<Enter>:!java %:r
 nnoremap <F3> :grep %<CR>
@@ -9,7 +9,7 @@ nnoremap <F5> :make -cp .:/home/yesennes/Documents/cs1332/junit-4.12.jar %<CR>
 nnoremap <F6> :!java -cp .:/home/yesennes/Documents/cs1332/junit-4.12.jar:/home/yesennes/Documents/cs1332/hamcrest-core-1.3.jar org.junit.runner.JUnitCore %:r<CR>
 nnoremap <Leader>l /^.\{81}<CR>
 nnoremap <CR> i"<CR>+ "<Esc>
-nnoremap <Space> :call <SID>GenGetSet()<Enter>
+nnoremap <Leader>g :call <SID>GenGetSet()<Enter>
 nnoremap <Leader>d :call <SID>GenDocs()<Enter>
 nnoremap <Leader>j :call <SID>OpenDocs()<Enter>
 nnoremap <Leader>s :call <SID>CheckstyleDumb()<Enter>

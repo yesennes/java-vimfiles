@@ -1,4 +1,5 @@
 set number
+set relativenumber
 set autowrite
 set cindent
 set complete=.,t,w,b,u,i
