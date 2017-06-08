@@ -1,5 +1,4 @@
 set number
-set relativenumber
 set autowrite
 set cindent
 set complete=.,t,w,b,u,i
@@ -13,4 +12,4 @@ augroup makepre
         au QuickFixCmdPre make !cls
     endif
 augroup END
-nmap <F1> :make %<Enter>
+nmap <F1> :make<Enter>

@@ -5,7 +5,7 @@ augroup javaCmds
 augroup END
 augroup programming
     au!
-    exe "au FileType java,c,python so $HOME/" . g:dotvim . "/program.vim" 
+    exe "au FileType java,c,cpp,python so $HOME/" . g:dotvim . "/program.vim" 
 augroup END
 "augroup general
 "    au!
