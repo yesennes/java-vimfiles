@@ -15,14 +15,14 @@ syntax enable
 nnoremap <Leader>e :Texplore<CR>
 nnoremap <Leader>c :cd %:h<CR>
 nnoremap <Leader>t :tab split<CR><C-]>
-augroup shape
-    au!
-    au InsertEnter *
-                \ if v:insertmode == 'i' |
-                \   silent execute "!gnome-terminal-cursor-shape.sh ibeam" |
-                \ elseif v:insertmode == 'r' |
-                \   silent execute "!gnome-terminal-cursor-shape.sh underline" |
-                \ endif
-    au InsertLeave * silent execute "!gnome-terminal-cursor-shape.sh block"
-    au VimLeave * silent execute "!gnome-terminal-cursor-shape.sh block"
-augroup END
+"augroup shape
+"    au!
+"    au InsertEnter *
+"                \ if v:insertmode == 'i' |
+"                \   silent execute "!gnome-terminal-cursor-shape.sh ibeam" |
+"                \ elseif v:insertmode == 'r' |
+"                \   silent execute "!gnome-terminal-cursor-shape.sh underline" |
+"                \ endif
+"    au InsertLeave * silent execute "!gnome-terminal-cursor-shape.sh block"
+"    au VimLeave * silent execute "!gnome-terminal-cursor-shape.sh block"
+"augroup END

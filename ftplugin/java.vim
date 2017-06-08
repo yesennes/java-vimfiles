@@ -1,6 +1,10 @@
 comp javac
-set makeprg=javac\ -Xlint
-set grepprg=java\ -jar\ ~/Documents/TA/checkstyle-6.2.2.jar
+if !filereadable("Makefile") && !filereadable("makefile")
+    set makeprg=javac\ -Xlint
+else
+    set makeprg=make
+endif
+set grepprg=java\ -jar\ ~/Documents/TA/checkstyle-6.2.2.jar\ -a
 set grepformat=%f:%l:%c:\ %m,%f:%l:\ %m
 nnoremap <F2> :!clear<Enter>:call <SID>Run()<Enter>
 nnoremap <F4>:!clear<Enter>:!java %:r
@@ -44,15 +48,15 @@ endfunction
 
 function! s:CheckstyleDumb()
     let l:search = @/
-    :%s/\(^.*\S\){/\1 {/g
-    :%s/)\([^ .,);]\)/) \1/g
-    :%s/if(/if (/g
-    :%s/for(/for (/g
-    :%s/while(/while (/g
-    :%s/}while/} while/g
-    :%s/}catch/} catch/g
-    :%s/catch(/catch (/g
-    :%s/}else/} else/g
+    :%s/\(^.*\S\){/\1 {/gc
+    :%s/)\([^ .,);]\)/) \1/gc
+    :%s/if(/if (/gc
+    :%s/for(/for (/gc
+    :%s/while(/while (/gc
+    :%s/}while/} while/gc
+    :%s/}catch/} catch/gc
+    :%s/catch(/catch (/gc
+    :%s/}else/} else/gc
     let @/ = l:search 
 endfunction
 

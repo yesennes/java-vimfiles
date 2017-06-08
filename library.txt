@@ -120,3 +120,13 @@ NumberExpression javafx.beans.binding.NumberExpression
 Pos javafx.geometry.Pos
 ChangeListener javafx.beans.value.ChangeListener
 TextAlignment javafx.scene.text.TextAlignment
+Serializable java.io.Serializable
+assertTrue static junit.framework.TestCase.assertTrue
+Deque java.util.Deque
+URISyntaxException java.net.URISyntaxException
+URL java.net.URL
+URI java.net.URI
+InputStream java.io.InputStream
+BufferedReader java.io.BufferedReader
+ListIterator java.util.ListIterator
+Consumer java.util.function.Consumer
