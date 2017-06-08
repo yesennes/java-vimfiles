@@ -10,20 +10,20 @@ if exists("syntax_on")
   syntax reset
 endif
 let g:colors_name = "mine"
-hi Normal       ctermfg=White ctermbg=16
-hi comment		ctermfg=DarkGray
-hi Type         ctermfg=46
-hi Conditional  ctermfg=yellow
-hi Repeat       ctermfg=yellow
-hi Todo			ctermfg=Yellow ctermbg=Blue
-hi Folded       ctermfg=DarkCyan ctermbg=Black
-hi LineNr		ctermfg=DarkCyan
-hi operator		ctermfg=Cyan
-hi String       ctermfg=Brown
-hi Special      ctermfg=40
-hi Preproc      ctermfg=21
-hi Constant     ctermfg=199
-hi Function     ctermfg=45
-hi Identifier   ctermfg=45 cterm=None
+hi Normal       ctermfg=White ctermbg=16 guibg=black guifg=white
+hi comment		ctermfg=DarkGray guifg=DarkGray
+hi Type         ctermfg=46 guifg=Green
+hi Conditional  ctermfg=yellow guifg=Yellow
+hi Repeat       ctermfg=yellow guifg=yellow
+hi Todo			ctermfg=Yellow guifg=Yellow ctermbg=Blue guibg=Blue
+hi Folded       ctermfg=DarkCyan guifg=DarkCyan ctermbg=Black guibg=Black
+hi LineNr		ctermfg=DarkCyan guifg=DarkCyan
+hi operator		ctermfg=Cyan guifg=Cyan
+hi String       ctermfg=Brown guifg=Brown
+hi Special      ctermfg=40 guifg=DarkGreen
+hi Preproc      ctermfg=21 guifg=Blue
+hi Constant     ctermfg=199 guifg=Pink
+hi Function     ctermfg=45 guifg=LightBlue
+hi Identifier   ctermfg=45 guifg=LightBlue cterm=None
 hi clear Visual
 hi Visual		term=reverse cterm=reverse gui=reverse
