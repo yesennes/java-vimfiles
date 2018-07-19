@@ -130,3 +130,4 @@ InputStream java.io.InputStream
 BufferedReader java.io.BufferedReader
 ListIterator java.util.ListIterator
 Consumer java.util.function.Consumer
+Layer2 com.atakmap.map.layer.Layer2
