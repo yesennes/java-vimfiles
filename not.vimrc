@@ -1,3 +1,5 @@
+execute pathogen#infect()
+
 set t_Co=256
 set ruler
 set shiftwidth=4
@@ -15,6 +17,8 @@ syntax enable
 nnoremap <Leader>e :Texplore<CR>
 nnoremap <Leader>c :cd %:h<CR>
 nnoremap <Leader>t :tab split<CR><C-]>
+set wildmenu
+set wildmode=list:longest
 "augroup shape
 "    au!
 "    au InsertEnter *
