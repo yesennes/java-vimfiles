@@ -1,8 +1,10 @@
 comp javac
-if !filereadable("Makefile") && !filereadable("makefile")
-    set makeprg=javac\ -Xlint
-else
+if filereadable("Makefile") || filereadable("makefile")
     set makeprg=make
+elseif filereadable("build.gradle")
+    set makeprg=gradle\ build
+else
+    set makeprg=javac\ -Xlint
 endif
 set grepprg=java\ -jar\ ~/Documents/TA/checkstyle-6.2.2.jar\ -a
 set grepformat=%f:%l:%c:\ %m,%f:%l:\ %m
@@ -39,6 +41,8 @@ function! s:Import()
         q
         execute "normal! ggoimport \<ESC>pa;\<C-O>\<C-O>"
     endif
+    let @@ = l:reg
+    let @/ = l:search
 endfunction
     
 function! s:Run()

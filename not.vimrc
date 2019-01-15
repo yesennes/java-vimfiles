@@ -18,7 +18,7 @@ nnoremap <Leader>e :Texplore<CR>
 nnoremap <Leader>c :cd %:h<CR>
 nnoremap <Leader>t :tab split<CR><C-]>
 set wildmenu
-set wildmode=list:longest
+set wildmode=longest,list
 "augroup shape
 "    au!
 "    au InsertEnter *

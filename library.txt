@@ -149,3 +149,13 @@ Files java.nio.file.Files
 FileSystems java.nio.file.FileSystems
 SelectionMode javafx.scene.control.SelectionMode
 NoSuchFileException java.nio.file.NoSuchFileException
+Modifier java.lang.reflect.Modifier
+JSONTokenizer org.json.JSONTokenizer
+JSONObject org.json.JSONObject
+OutputStream java.io.OutputStream
+HttpURLConnection java.net.HttpURLConnection
+URLConnection java.net.URLConnection
+Function java.util.function.Function
+JSONException org.json.JSONException
+ExecutionException java.util.concurrent.ExecutionException
+JSONArray org.json.JSONArray
