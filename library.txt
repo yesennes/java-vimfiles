@@ -159,3 +159,6 @@ Function java.util.function.Function
 JSONException org.json.JSONException
 ExecutionException java.util.concurrent.ExecutionException
 JSONArray org.json.JSONArray
+FileReader java.io.FileReader
+Stream java.util.Stream
+Fuction java.util.function.Fuction
