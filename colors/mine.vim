@@ -21,9 +21,11 @@ hi LineNr		ctermfg=DarkCyan guifg=DarkCyan
 hi operator		ctermfg=Cyan guifg=Cyan
 hi String       ctermfg=Brown guifg=Brown
 hi Special      ctermfg=40 guifg=DarkGreen
-hi Preproc      ctermfg=21 guifg=Blue
+hi Preproc      ctermfg=White guifg=LightGray
 hi Constant     ctermfg=199 guifg=Pink
 hi Function     ctermfg=45 guifg=LightBlue
 hi Identifier   ctermfg=45 guifg=LightBlue cterm=None
 hi clear Visual
 hi Visual		term=reverse cterm=reverse gui=reverse
+hi DiffAdd      term=bold cterm=reverse ctermbg=None
+hi DiffText     term=bold cterm=reverse ctermbg=None

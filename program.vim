@@ -13,4 +13,5 @@ set complete=.,t,w,b,u,i
 "    endif
 "augroup END
 nmap <F1> :make<Enter>
+nnoremap <Leader>e :!ctags .<c-r>
 command! -nargs=1 -complete=tag Tabe tab tag <args>

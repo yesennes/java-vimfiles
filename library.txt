@@ -159,3 +159,6 @@ Function java.util.function.Function
 JSONException org.json.JSONException
 ExecutionException java.util.concurrent.ExecutionException
 JSONArray org.json.JSONArray
+Base64 java.util.Base64
+Inflater java.util.zip.Inflater
+InflaterOutputStream java.util.zip.InflaterOutputStream

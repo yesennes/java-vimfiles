@@ -6,8 +6,8 @@ elseif filereadable("build.gradle")
 else
     set makeprg=javac\ -Xlint
 endif
-set grepprg=java\ -jar\ ~/Documents/TA/checkstyle-6.2.2.jar\ -a
-set grepformat=%f:%l:%c:\ %m,%f:%l:\ %m
+"set grepprg=java\ -jar\ ~/Documents/TA/checkstyle-6.2.2.jar\ -a
+"set grepformat=%f:%l:%c:\ %m,%f:%l:\ %m
 nnoremap <F2> :!clear<Enter>:call <SID>Run()<Enter>
 nnoremap <F4>:!clear<Enter>:!java %:r
 nnoremap <F3> :grep %<CR>

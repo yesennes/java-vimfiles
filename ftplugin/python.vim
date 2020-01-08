@@ -1,1 +1,1 @@
-set makeprg=python
+set makeprg=python3
