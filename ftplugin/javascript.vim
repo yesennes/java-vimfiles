@@ -1,3 +1,3 @@
 nnoremap <Leader>s :call javascriptFunc#swap()<Enter>
-set foldmethod=indent
+set foldmethod=syntax
 set foldnestmax=2

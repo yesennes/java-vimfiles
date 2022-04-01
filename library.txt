@@ -162,3 +162,6 @@ JSONArray org.json.JSONArray
 Base64 java.util.Base64
 Inflater java.util.zip.Inflater
 InflaterOutputStream java.util.zip.InflaterOutputStream
+FileReader java.io.FileReader
+Stream java.util.Stream
+Fuction java.util.function.Fuction

@@ -8,12 +8,18 @@ augroup END
 let g:dotvim=".vim"
 augroup programming
     au!
-    exe "au FileType go,scad,java,c,cpp,python,javascript so $HOME/" . g:dotvim . "/program.vim" 
+    exe "au FileType go, arduino,scad,java,c,cpp,python,javascript so $HOME/" . g:dotvim . "/program.vim" 
 augroup END
 
 augroup text
     au!
     exe "au FileType rst setlocal spell"
+augroup END
+
+augroup templates
+  au!
+  au BufNewFile *.vue 0r ~/.vim/templates/skeleton.vue
+  au BufNewFile *.vue %s/\${fileName}/\=expand('%:t:r')/
 augroup END
 "augroup programming
 "    au!

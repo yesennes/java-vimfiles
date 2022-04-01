@@ -4,3 +4,15 @@
 [submodule "bundle/vim-go"]
 	path = bundle/vim-go
 	url = https://github.com/fatih/vim-go.git
+[submodule "bundle/typescript-vim"]
+	path = bundle/typescript-vim
+	url = https://github.com/leafgarland/typescript-vim
+[submodule "plugged/LanguageClient-neovim"]
+	path = plugged/LanguageClient-neovim
+	url = https://github.com/autozimu/LanguageClient-neovim
+[submodule "plugged/vim-go"]
+	path = plugged/vim-go
+	url = https://github.com/fatih/vim-go
+[submodule "plugged/vim-vue-plugin"]
+	path = plugged/vim-vue-plugin
+	url = https://github.com/leafOfTree/vim-vue-plugin
