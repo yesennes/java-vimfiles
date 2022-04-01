@@ -5,10 +5,9 @@ augroup javaCmds
                 \strftime("%b %d, %y")."\<CR>\<BS>*/\<CR>public class" expand("%:t:r") "{\r\r}\<Esc>2ggA"
 augroup END
 
-let g:dotvim=".vim"
 augroup programming
     au!
-    exe "au FileType go, arduino,scad,java,c,cpp,python,javascript so $HOME/" . g:dotvim . "/program.vim" 
+    exe "au FileType verilog, go, arduino,scad,java,c,cpp,python,javascript so $HOME/" . g:dotvim . "/program.vim" 
 augroup END
 
 augroup text
