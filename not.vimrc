@@ -58,9 +58,8 @@ let g:vim_vue_plugin_config = {
 let g:LanguageClient_serverCommands = {
     \ 'typescript': ['/nishome2/lmsense/.nvm/versions/node/v12.22.6/bin/typescript-language-server', '--stdio'],
     \ 'javascript': ['/nishome2/lmsense/.nvm/versions/node/v12.22.6/bin/typescript-language-server', '--stdio'],
-    \ 'vue': ['/nishome2/lmsense/.nvm/versions/node/v12.22.6/bin/html-languageserver', '--stdio'],
+    \ 'vue': ['vls']
     \ }
-"    \ 'vue': ['/nishome2/lmsense/.nvm/versions/node/v12.22.6/bin/vls', '--stdio'],
 
 let g:LanguageClient_loggingLevel = 'INFO'
 let g:LanguageClient_loggingFile = expand('~/LanguageClient.log')
@@ -69,5 +68,6 @@ set formatexpr=LanguageClient#textDocument_rangeFormatting_sync()
 
 nnoremap <silent> K :call LanguageClient#textDocument_hover()<CR>
 nnoremap <silent> gd :call LanguageClient#textDocument_definition()<CR>
+nnoremap <silent> <Leader>i :call LanguageClient#textDocument_codeAction()<CR>
 nnoremap <silent> <F2> :call LanguageClient#textDocument_rename()<CR>
 nnoremap <silent> <Leader>* :call LanguageClient#textDocument_references()<CR>
